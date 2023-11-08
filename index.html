@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos-js</title>
+</head>
+
+<body id="fondo" style="background-color: red;">
+
+  <h1>Como funciona JavaScript</h1>
+
+  <p id="modifica">Ejercicio 1: Este texto puede ser modificado con js.</p>
+  <button type="button" onclick="document.getElementById('modifica').innerHTML='Ejercicio 1: Este texto a sido modificado.'">texto  nuevo</button>
+  <button type="button" onclick="document.getElementById('modifica').innerHTML='Ejercicio 1: Este texto puede ser modificado con js.'">texto anterior</button>
+
+  <p>Ejercicio 2: A continuacion vamos a cambiar de imagen.</p>
+  <img id="cambia" src="img/Logo.png" alt="logo de mi imagen" width="100px"><br>
+  <button type="button" onclick="document.getElementById('cambia').src='img/Logotipo.png'" alt="logotipo de mi imagen">cambia de img</button>
+  <button type="button" onclick="document.getElementById('cambia').src='img/Logo.png'" alt="logo de mi imagen">regresa la img</button>
+
+  <p>Ejercicio 3: JavaScript puede cambiar los estilos de html.</p>
+  <button type="button" onclick="document.getElementById('fondo').style.background='blue'">color nuevo</button>
+  <button type="button" onclick="document.getElementById('fondo').style.background='red'">color anterior</button>
+
+  <p id="texto">Ejercicio 4: js puede desaparecer y aparacer un texto.</p><br>
+  <button type="button" onclick="document.getElementById('texto').style.display='none'">desaparece</button>
+  <button type="button" onclick="document.getElementById('texto').style.display='block'">aparece</button>
+</body>
+
+</html>

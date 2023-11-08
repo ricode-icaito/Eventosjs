@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funciones.js</title>
+</head>
+
+<body>
+
+  <h1>Funciones con javascript</h1>
+  <p id="saludo"></p>
+  <p id="despedida"></p>
+  <button type="button" onclick='miFuncion()'>saludo</button>
+  <button type="button" onclick='miFuncion1()'>despedida</button>
+  <script>
+    function miFuncion() {
+      document.getElementById('saludo').innerHTML="ola mundo, soy Richard"
+    }
+    const miFuncion1=() => {
+      document.getElementById('despedida').innerHTML='seguimos en contacto, adios!';
+    }  
+  </script>
+
+</body>
+
+</html>

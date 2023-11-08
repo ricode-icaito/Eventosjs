@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arreglos.js</title>
+</head>
+<body>
+  <h1>Array forEach</h1>
+  <p id="mult"></p>
+
+  <script>
+    let arreglo = [2, 4, 6, 8, 10];
+    let texto = "";
+
+    /*const miFuncion = (e) => {
+      texto = texto + e * 2 + '-';
+    }
+    arreglo.forEach(miFuncion);*/
+    arreglo.forEach((e) => texto = texto + e * 2 + '-');
+    document.getElementById('mult').innerHTML=texto;
+  </script>
+</body>
+</html>
